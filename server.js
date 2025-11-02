@@ -10,8 +10,8 @@ const app = express();
 const corsOptions = {
     origin: [
         'https://pandurate-squatly-hae.ngrok-free.dev',
-        'https://visiocampus-socketio.onrender.com',
-        'https://visiocampus-mediasoup-sfu.onrender.com',
+        'https://visiocampus-socketio.onrender1.com',
+        'https://visio-sfu-server-3.onrender.com',
         'http://localhost:3000',
         'http://localhost:8000',
         'http://localhost:5173'
@@ -91,8 +91,7 @@ const peerServer = PeerServer({
     allow_discovery: true,
     concurrent_limit: 100,
     key: 'visiocampus-peerjs',
-    port: PORT,
-    host: HOST,
+    // SUPPRIMER 'port' et 'host' - PeerJS utilisera le serveur Express existant
     corsOptions: corsOptions,
 
     // Configuration pour la stabilité
