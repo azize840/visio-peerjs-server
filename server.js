@@ -10,8 +10,8 @@ const app = express();
 const corsOptions = {
     origin: [
         'https://pandurate-squatly-hae.ngrok-free.dev',
-        'https://visiocampus-socketio.onrender1.com',
-        'https://visio-sfu-server-4.onrender.com',
+        'https://visiocampus-socketio-1.onrender.com',
+        'https://visio-sfu-server-5.onrender.com',
         'http://localhost:3000',
         'http://localhost:8000',
         'http://localhost:5173'
